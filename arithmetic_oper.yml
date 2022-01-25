@@ -1,0 +1,11 @@
+---
+ - hosts: localhost
+   vars: 
+    x=24
+   gather_facts: flase 
+   tasks:
+   - name: Displaying Values 
+     debug: 
+       msg: 
+       - "The value of x is: {{x}}"
+       - "The value of y is: {{y}}"
