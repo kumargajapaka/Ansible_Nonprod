@@ -1,0 +1,7 @@
+---
+ - name: usage of debug module
+   hosts: all
+   tasks:
+   - name: Prinitng variable using debug module 
+     debug:
+      var: inventory_hostname

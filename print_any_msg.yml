@@ -1,0 +1,10 @@
+---
+ - name: This is simple play
+   hosts: localhost
+   tasks:
+   - name: Printing messgaes with debug module
+     debug: 
+      msg:
+      - "Welcome to Ansible playbook"
+      - "These are basic concepts"
+      - "Advanced concepts"

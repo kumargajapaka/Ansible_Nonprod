@@ -1,0 +1,11 @@
+---
+ - name: Usage of verbosity
+   hosts: all
+   tasks:
+   - name: Verbosity as default
+     debug:
+      msg: "Verbosity as default"
+   - name: Verbosity as 2
+     debug:
+      msg: "Verbosity as 2"
+      verbosity: 2

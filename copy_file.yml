@@ -1,0 +1,9 @@
+---
+- name: this is simple web_servers playbook
+  hosts: web_servers
+  gather_facts: false
+  tasks: 
+  - name: This is a task to copy a file to managed nodes
+    copy: src=web.xml dest=web.xml
+  - name: This ia creating empty file on managed nodes
+    file: path=demonew.txt state=touch

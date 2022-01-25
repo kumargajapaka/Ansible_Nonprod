@@ -1,0 +1,11 @@
+---
+ - name: This is a play to install httpd and wget on web servers group
+   hosts: web_servers
+   gather_facts: no
+   become: yes
+   tasks:
+   - name: unInstalling httpd pkg
+     yum: name=httpd state=absent
+   - name: unInstalling wget pkg
+     yum: name=wget state=absent
+     

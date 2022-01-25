@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - yum: name=wget state=absent
+- hosts: db_servers
+  become: yes
+  tasks: 
+  - yum: name=httpd state=present

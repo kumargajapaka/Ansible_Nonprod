@@ -1,0 +1,9 @@
+---
+ x: 5
+ y: 
+  - 5
+  - "anisble"
+  - 67
+ pkgs: 
+  "linux": "httpd"
+  "ubuntu": "apache2"

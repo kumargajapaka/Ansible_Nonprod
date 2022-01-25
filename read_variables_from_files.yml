@@ -1,0 +1,6 @@
+---
+ - hosts: localhost
+   vars_files: variable_values.yml
+   gather_facts: false
+   tasks:
+   - debug: var=pkgs

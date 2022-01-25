@@ -1,0 +1,7 @@
+---
+ - hosts: localhost
+   vars: 
+    x: 34
+    pkgs: ['vim','nano','httpd','nginx'] 
+   tasks:
+   - debug: var=pkgs

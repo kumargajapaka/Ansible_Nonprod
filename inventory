@@ -1,0 +1,6 @@
+[web_servers]
+localhost
+172.31.84.215
+
+[db_servers]
+172.31.88.166

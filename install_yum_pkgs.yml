@@ -1,0 +1,8 @@
+---
+ - hosts: localhost
+   become: yes
+   tasks:
+   - name: Install Nano on localhost 
+     yum: name=nano state=present
+   - name: Install httpd on localhost
+     yum: name=httpd state=latest

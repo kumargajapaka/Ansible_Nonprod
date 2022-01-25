@@ -1,0 +1,15 @@
+---
+ - hosts: localhost
+   vars:
+    x: 23
+    my_number: 45
+    my_b: false
+    my_name: Kumar Gajapaka
+   tasks:
+   - debug:
+      msg: 
+       - "The value of x is: {{x}} and type: {{x|type_debug}}"
+       - "The value of my_number is: {{my_number}} and type: {{my_number|type_debug}}"
+       - "The value of my_b is: {{my_b}} and type:  {{my_b|type_debug}}"
+       - "The valus is my_name is: {{my_name}} and type:  {{my_name|type_debug}}"
+
