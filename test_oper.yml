@@ -8,3 +8,5 @@
    - debug: 
        msg: 
         - "The value of x is: {{x}}"
+        - "The value of x is: {{y}}"
+     when: y is defined
