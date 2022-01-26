@@ -1,12 +1,22 @@
 ---
  - hosts: localhost
+<<<<<<< HEAD
    gather_facts: false
    vars:
      x: 55
      y: 30 
+=======
+   vars: 
+    x=24
+   gather_facts: flase 
+>>>>>>> 0194975ab84a7db56817db93719eb609c0addd55
    tasks:
    - name: Displaying Values 
      debug: 
        msg: 
        - "The value of x is: {{x}}"
+<<<<<<< HEAD
        - "The value of y is: {{y}}"
+=======
+       - "The value of y is: {{y}}"
+>>>>>>> 0194975ab84a7db56817db93719eb609c0addd55
