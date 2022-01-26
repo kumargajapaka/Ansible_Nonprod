@@ -3,7 +3,7 @@
    gather_facts: false
    vars:
      x: 55
-     y: 25 
+     y: 30 
    tasks:
    - name: Displaying Values 
      debug: 
