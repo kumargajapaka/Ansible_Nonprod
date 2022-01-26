@@ -1,0 +1,12 @@
+---
+ - hosts: localhost
+   gather_facts: false
+   vars:
+     x: 2
+     y: 3
+   tasks:
+   - name: Displaying Values
+     debug:
+       msg:
+       - "The value of x is: {{x}}"
+       - "The value of y is: {{y}}"
