@@ -1,0 +1,10 @@
+---
+ - name: This is about test operators
+   hosts: localhost 
+   gather_facts: flase 
+   vars: 
+    x: 25
+   tasks: 
+   - debug: 
+       msg: 
+        - "The value of x is: {{x}}"
