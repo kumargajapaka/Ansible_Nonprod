@@ -7,7 +7,7 @@
    - name: Install httpd
      yum: 
        name: httpd 
-       state: absent
+       state: present
        notify: 
         - start httpd 
    handlers: 
