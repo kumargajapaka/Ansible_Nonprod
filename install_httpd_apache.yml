@@ -1,0 +1,8 @@
+---
+ - name: Install apache httpd on web servers 
+   hosts: web_servers
+   gather_facts: true
+   tasks: 
+   - debug: 
+       msg: 
+       - "Node is: {{inventory_hostname}} and Distribution is: {{ansible_distribution}}"
