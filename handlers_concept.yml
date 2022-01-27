@@ -1,0 +1,16 @@
+---
+ - name: Install httpd on localhost
+   hosts: localhost 
+   gather_facts: false
+   become: yes
+   tasks: 
+   - name: Install httpd
+     yum: 
+       name: httpd 
+       state: present 
+     register: out 
+   - name: Start service 
+     service: 
+        name: httpd 
+        state: started 
+     when: out.changed == true
