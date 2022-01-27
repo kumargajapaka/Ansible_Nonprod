@@ -8,3 +8,10 @@
      yum: 
        name: httpd 
        state: absent
+       notify: 
+        - start httpd 
+   handlers: 
+   - name: start httpd 
+     service: 
+       name: httpd 
+       state: started
