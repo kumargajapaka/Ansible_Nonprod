@@ -7,10 +7,11 @@
    - name: Install httpd
      yum: 
        name: httpd 
-       state: present 
-     register: out 
-   - name: Start service 
+       state: present
+       notify: 
+        - start httpd 
+   handlers: 
+   - name: start httpd 
      service: 
-        name: httpd 
-        state: started 
-     when: out.changed == true
+       name: httpd 
+       state: started
